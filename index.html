@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <section class="container">
+        <form action="#" method="post" class="form-cadastro">
+            <h1>Formulário de cadastro</h1>
+            <input type="text" name="name" id="name" placeholder="Nome" required
+            oninvalid="this.setCustomValidity('Preencha o campo Nome')" oninput="this.setCustomValidity('')">
+
+            <input type="email" name="email" id="email" placeholder="Email" required oninvalid="this.setCustomValidity('Preencha o campo Email')" oninput="this.setCustomValidity('')" >
+
+            <input type="password" name="password" id="password" placeholder="Senha" required oninvalid="this.setCustomValidity('Preencha o campo Senha')" oninput="this.setCustomValidity('')">
+
+            <input type="password" name="c-password" id="c-password" placeholder="Confirmar senha" required oninvalid="this.setCustomValidity('Preencha o campo Confirme senha')" oninput="this.setCustomValidity('')">
+
+            <button type="submit">Cadastrar</button>
+
+            <p><a href="#">Esqueci a senha</a></p>
+            <p><a href="#">Ainda não sou cadastrado</a></p>
+        </form>
+    </section>
+</body>
+</html>
